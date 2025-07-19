@@ -1,0 +1,1711 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="Tyson Swetnam">
+      
+      
+        <link rel="canonical" href="https://tyson-swetnam.github.io/geri-neon-ecs/latest/cyverse/">
+      
+      
+        <link rel="prev" href="../glossary/">
+      
+      
+        <link rel="next" href="../vibe/">
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Intro to CyVerse - GERI-NEON Early Career Scientist Workshop</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ncems" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-use-cyverse" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GERI-NEON Early Career Scientist Workshop" class="md-header__button md-logo" aria-label="GERI-NEON Early Career Scientist Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.27 10 9 7h5.42l1.16-2-.08-.5A1.5 1.5 0 0 1 17 3a1.5 1.5 0 0 1 1.5 1.5c0 .71-.5 1.31-1.17 1.46l-.96 1.67L17.73 10l.86-1.5-.09-.5A1.5 1.5 0 0 1 20 6.5 1.5 1.5 0 0 1 21.5 8c0 .71-.5 1.3-1.15 1.46L18.89 12l1.73 3c.77.07 1.38.71 1.38 1.5a1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5v-.26L17.73 14l-1.36 2.37.96 1.67a1.5 1.5 0 0 1 1.17 1.46A1.5 1.5 0 0 1 17 21a1.5 1.5 0 0 1-1.5-1.5l.08-.5-1.16-2h-3.84l-1.16 2 .08.5A1.5 1.5 0 0 1 8 21a1.5 1.5 0 0 1-1.5-1.5c0-.71.5-1.31 1.17-1.46l.96-1.67L4.38 9C3.61 8.93 3 8.29 3 7.5A1.5 1.5 0 0 1 4.5 6 1.5 1.5 0 0 1 6 7.5v.26zm2.88-1-1.73 3 1.73 3h4.7l1.73-3-1.73-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GERI-NEON Early Career Scientist Workshop
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Intro to CyVerse
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ncems" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tyson-swetnam/geri-neon-ecs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    geri-neon-ecs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GERI-NEON Early Career Scientist Workshop" class="md-nav__button md-logo" aria-label="GERI-NEON Early Career Scientist Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.27 10 9 7h5.42l1.16-2-.08-.5A1.5 1.5 0 0 1 17 3a1.5 1.5 0 0 1 1.5 1.5c0 .71-.5 1.31-1.17 1.46l-.96 1.67L17.73 10l.86-1.5-.09-.5A1.5 1.5 0 0 1 20 6.5 1.5 1.5 0 0 1 21.5 8c0 .71-.5 1.3-1.15 1.46L18.89 12l1.73 3c.77.07 1.38.71 1.38 1.5a1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5v-.26L17.73 14l-1.36 2.37.96 1.67a1.5 1.5 0 0 1 1.17 1.46A1.5 1.5 0 0 1 17 21a1.5 1.5 0 0 1-1.5-1.5l.08-.5-1.16-2h-3.84l-1.16 2 .08.5A1.5 1.5 0 0 1 8 21a1.5 1.5 0 0 1-1.5-1.5c0-.71.5-1.31 1.17-1.46l.96-1.67L4.38 9C3.61 8.93 3 8.29 3 7.5A1.5 1.5 0 0 1 4.5 6 1.5 1.5 0 0 1 6 7.5v.26zm2.88-1-1.73 3 1.73 3h4.7l1.73-3-1.73-3z"/></svg>
+
+    </a>
+    GERI-NEON Early Career Scientist Workshop
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tyson-swetnam/geri-neon-ecs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    geri-neon-ecs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prerequisites
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary & Acronyms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Intro to CyVerse
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intro to CyVerse
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cyverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is CyVerse?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is CyVerse?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyverse-account-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      CyVerse Account Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discovery-environment-tour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discovery Environment Tour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-vice-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting a VICE App
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-unix-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unix Shell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-your-cyverse-data-with-gocommands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Your CyVerse Data with GoCommands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Your CyVerse Data with GoCommands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyverse-vm-file-system-layout-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      CyVerse VM File System Layout (Ubuntu)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-a-virtual-machine-in-the-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      Launching a Virtual Machine in the DE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Launching a Virtual Machine in the DE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#log-in-to-the-cyverse-discovery-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log in to the CyVerse Discovery Environment.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-system-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File System Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-your-cyverse-vm-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      In your CyVerse VM Terminal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="In your CyVerse VM Terminal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-the-file-from-the-data-store-to-your-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download the file from the Data Store to your VM
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-reproducible-python-environment-with-a-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a reproducible Python environment with a package manager
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a reproducible Python environment with a package manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the app
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-analyses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Analyses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyter-lab-gpus-w-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jupyter Lab GPUs w/ Ollama
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jupyter Lab GPUs w/ Ollama">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-own-ai-model-with-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Your Own AI Model with Ollama
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run Your Own AI Model with Ollama">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-your-cyverse-gpu-vm-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      In your CyVerse GPU VM Terminal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introductory-shell-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introductory Shell Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introductory Shell Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-carpentries-lessons-on-linux-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Carpentries Lessons on Linux Command line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vibe Coding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cyverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is CyVerse?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is CyVerse?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyverse-account-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      CyVerse Account Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discovery-environment-tour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discovery Environment Tour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-vice-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting a VICE App
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-unix-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unix Shell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-your-cyverse-data-with-gocommands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Your CyVerse Data with GoCommands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Your CyVerse Data with GoCommands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyverse-vm-file-system-layout-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      CyVerse VM File System Layout (Ubuntu)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-a-virtual-machine-in-the-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      Launching a Virtual Machine in the DE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Launching a Virtual Machine in the DE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#log-in-to-the-cyverse-discovery-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log in to the CyVerse Discovery Environment.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-system-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File System Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-your-cyverse-vm-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      In your CyVerse VM Terminal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="In your CyVerse VM Terminal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-the-file-from-the-data-store-to-your-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download the file from the Data Store to your VM
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-reproducible-python-environment-with-a-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a reproducible Python environment with a package manager
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a reproducible Python environment with a package manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the app
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-analyses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Analyses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyter-lab-gpus-w-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jupyter Lab GPUs w/ Ollama
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jupyter Lab GPUs w/ Ollama">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-own-ai-model-with-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Your Own AI Model with Ollama
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run Your Own AI Model with Ollama">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-your-cyverse-gpu-vm-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      In your CyVerse GPU VM Terminal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introductory-shell-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introductory Shell Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introductory Shell Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-carpentries-lessons-on-linux-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Carpentries Lessons on Linux Command line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/tyson-swetnam/geri-neon-ecs/edit/mkdocs/docs/cyverse.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/tyson-swetnam/geri-neon-ecs/raw/mkdocs/docs/cyverse.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="how-to-use-cyverse">How to use CyVerse<a class="headerlink" href="#how-to-use-cyverse" title="Permanent link">&para;</a></h1>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 6a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V19a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1.8c-1.79-1.04-3-2.98-3-5.2a6 6 0 0 1 6-6m2 15v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1zm6-10h3v2h-3zM1 11h3v2H1zM13 1v3h-2V1zM4.92 3.5l2.13 2.14-1.42 1.41L3.5 4.93zm12.03 2.13 2.12-2.13 1.43 1.43-2.13 2.12z"/></svg></span> Imagine, Your Lab in the Cloud</strong></p>
+<p>Welcome to scientific research computing in the 21<sup>st</sup> century! </p>
+<p>While using a mouse in a Graphical User Interface (GUI) is more familiar to most of us, the real power of reproducible science comes from the Command Line Interface (CLI). </p>
+<p>The CLI allows you to give precise, text-based instructions to a computer, automating tasks and managing massive datasets in ways a GUI cannot.</p>
+<p>In this lesson, you'll learn to use the CLI on <a href="https://de.cyverse.org" target="_blank">CyVerse</a>, a powerful, cloud-based platform designed for science. Instead of installing complex software on your own machine, you'll use CyVerse to access everything you need right from your web browser. </p>
+<h2 id="what-is-cyverse">What is CyVerse?<a class="headerlink" href="#what-is-cyverse" title="Permanent link">&para;</a></h2>
+<p>CyVerse is not just one tool, but a comprehensive <em>cyberinfrastructure</em> built to support researchers throughout the entire data lifecycle (<a href="https://doi.org/10.1371/journal.pcbi.1011270" target="_blank">Swetnam et al. 2024</a>). </p>
+<p>It's composed of four main integrated platforms:</p>
+<p><strong>Data Management</strong>: At its core, CyVerse provides a robust, large-scale data storage system. It allows you to store, manage, and share massive datasets securely and provides tools for high-speed data transfer. We'll be using this <a href="https://data.cyverse.org" target="_blank">Data Store</a> today.</p>
+<p><strong>Discovery Environment (DE)</strong>: The <a href="https://de.cyverse.org" target="_blank">DE</a> is a web-based portal for accessing scientific tools and workflows. You can use its intuitive interface to launch analyses, from simple virtual machines to complex, multi-step bioinformatics pipelines, without needing to be an expert in high-performance computing.</p>
+<p><strong>Cloud Native Services</strong>: For more advanced users, CyVerse offers a container-based, composable infrastructure that runs on <a href="https://jetstream-cloud.org" target="_blank">NSF's Jetstream-2 Cloud</a>, AWS, GCloud, or Azure. These Infrastructure as Code (IaC) tools allows you to deploy your own custom applications and services at scale, giving you greater flexibility and control over your computational environments.</p>
+<p><strong>Artificial Intelligence (AI/ML)</strong>: <a href="https://chat.cyverse.ai" target="_blank">AI-Verde</a>, provides access to cutting-edge hardware, including GPUs, and pre-configured tools to support generative AI (LLMs). In the Discovery Environment, and on Jetstream-2, we support a wide array of machine learning and artificial intelligence research. These platforms makes it easier to train, test, and deploy AI models on large datasets.</p>
+<p>Today, we will use the <strong>Data Store</strong> to move files and the <strong>Discovery Environment</strong> to launch virtual analyses. We will briefly introduce generative AI tools. Next week, we'll focus on the AI/ML platforms to run a large language model and practice prompt engineering in more depth.</p>
+<h3 id="cyverse-account-creation">CyVerse Account Creation<a class="headerlink" href="#cyverse-account-creation" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Create your account: <a href="https://user.cyverse.org" target="_blank">https://user.cyverse.org</a></p>
+<p>You should be prompted to set a valid email address, an then create a password. For the sake of this workshp, use the same email address you gave to GERI-NEON staff.</p>
+</li>
+<li>
+<p>Enroll in the GERI-NEON workshop: <a href="https://user.cyverse.org/workshops/194" target="_blank">https://user.cyverse.org/workshops/194</a></p>
+<p>As part of GERI-NEON, you will be granted special access to CyVerse. </p>
+<p>We have pre-registered the email account you enrolled with GERI-NEON in the workshop enrollment form. </p>
+<p>AFTER you have created and verified your CyVerse account, go to the Workshops in the User Portal and find the GERI-NEON workshop. Click on 'Enroll' to be automatically added to the workshop.</p>
+<p>Your account will be promoted and you will be given access to the Discovery Environment's interactive applications (which we will use in the next section)</p>
+</li>
+<li>
+<p>Log into the Discovery Environment (DE): <a href="https://de.cyverse.org" target="_blank">https://de.cyverse.org</a></p>
+</li>
+</ol>
+<h3 id="discovery-environment-tour">Discovery Environment Tour<a class="headerlink" href="#discovery-environment-tour" title="Permanent link">&para;</a></h3>
+<p>If this is your first time logging into the DE, allow the Tour to show you all of the GUI features.</p>
+<h3 id="starting-a-vice-app">Starting a VICE App<a class="headerlink" href="#starting-a-vice-app" title="Permanent link">&para;</a></h3>
+<p>Let's start out with the <a href="https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621/launch" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53m2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></svg></span> Cloud Shell</a></p>
+<p>Interactive Apps (GUI) can be found in the <a href="https://de.cyverse.org/apps" target="_blank">Featured Apps list</a></p>
+<p>Launch a Cloud Shell from the list or from the quick launch icon in the Tool Bar by clicking on the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.25 12a.75.75 0 0 1-.22.53l-2.75 2.75a.75.75 0 0 1-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53m2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"/><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/></svg></span> icon.</p>
+<h2 id="the-unix-shell">The Unix Shell<a class="headerlink" href="#the-unix-shell" title="Permanent link">&para;</a></h2>
+<p>The CLI sees the computer stripped down to only a <a href="https://en.wikipedia.org/wiki/Terminal_emulator" target="_blank">Terminal</a> from where one can run powerful commands executed through the <a href="https://en.wikipedia.org/wiki/Shell_(computing)" target="_blank">Shell</a>.</p>
+<p>Though there are technical differences between them, the terms <strong>Command Line Interface</strong>, <strong>Terminal</strong>, <strong>Shell</strong>, and <strong>BASH</strong> will be used more or less interchangeably throughout the lesson. </p>
+<p><br>
+<br></p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>Attention</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows users</p>
+<p>Much of what we are going to be teaching is based on open-source software which operates on cloud and is incompatible with Windows OS.</p>
+<p>Unix-based systems such as Linux <a href="https://ubuntu.com/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-7.66-4.26c.58.33 1.31.13 1.66-.44.31-.57.12-1.3-.46-1.64-.57-.33-1.31-.16-1.64.44-.33.57-.13 1.31.44 1.64m-2.46 7.76c-.53 0-1.03-.11-1.47-.32l-.84 1.5c.7.32 1.48.54 2.31.54.49 0 .95-.07 1.4-.19.08-.49.36-.93.82-1.19.46-.27.98-.29 1.44-.12.89-.87 1.46-2.06 1.55-3.39l-1.71-.02a3.506 3.506 0 0 1-3.5 3.19m0-7c1.84 0 3.34 1.39 3.5 3.19l1.71-.03a5.2 5.2 0 0 0-1.55-3.38c-.46.17-.99.14-1.44-.12-.46-.26-.74-.71-.82-1.19-.45-.12-.91-.19-1.4-.19-.83 0-1.61.19-2.31.54l.84 1.5c.44-.21.94-.32 1.47-.32M8.37 12c0-1.19.59-2.24 1.49-2.87L9 7.65a5.22 5.22 0 0 0-2.17 3.04c.38.31.62.78.62 1.31s-.24 1-.62 1.31A5.2 5.2 0 0 0 9 16.34l.86-1.47c-.9-.63-1.49-1.68-1.49-2.87m5.97 4.26c-.57.33-.77 1.06-.44 1.64.33.57 1.07.77 1.64.44.58-.34.77-1.07.46-1.64-.35-.58-1.08-.77-1.66-.44M5.76 10.8c-.66 0-1.2.54-1.2 1.2s.54 1.2 1.2 1.2c.67 0 1.2-.54 1.2-1.2s-.53-1.2-1.2-1.2"/></svg></span> Ubuntu</a> and <a href="https://www.apple.com/macos/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> MacOS X</a>, as many scientific tools require a Unix Operating System (OS). </p>
+<p>There are a number of software that allow <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows users to execute Unix commands, however we recommend the use of <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> Windows Subsystem for Linux (WSL) 2.0</a>.</p>
+<details class="tip">
+<summary>Quickstart installation of Window's WSL</summary>
+<div class="admonition warning">
+<p class="admonition-title">A system reboot is necessary</p>
+</div>
+<ol>
+<li>Open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4zm-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44z"/></svg></span> PowerShell in Administrator mode (open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></span> Search and look for PowerShell, right click and select "Run as Administrator")</li>
+<li>type <code>wsl --install</code></li>
+<li>Restart your machine</li>
+<li>Open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></span> Search and open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> WSL; create a username and password, wait for it to finish setting up (should take a few minutes)</li>
+<li>You're now ready to use <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> Linux on your Windows Machine!</li>
+</ol>
+<details class="question">
+<summary>Where is the WSL Home folder?</summary>
+<p>The Home folders for Linux and Windows are different. The Windows path to the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> WSL home folder is <code>\\wsl$\Ubuntu\home\&lt;username&gt;</code>.</p>
+<p>We suggest creating a bookmark in your Windows machine to allow quicker access to the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> Linux partition (for quicker access to files).</p>
+<p>To quickly open the folder, open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> WSL and execute <code>explorer.exe .</code>. This will open a folder in Windows at the Linux Home folder. </p>
+</details>
+</details>
+</div>
+<h2 id="managing-your-cyverse-data-with-gocommands">Managing Your CyVerse Data with GoCommands<a class="headerlink" href="#managing-your-cyverse-data-with-gocommands" title="Permanent link">&para;</a></h2>
+<p>Before launching an analysis, you need a way to move data between your personal computer and the CyVerse Data Store. The best tool for this is <a href="https://learning.cyverse.org/ds/gocommands/" target="_blank"><code>gocmd</code></a>, a command-line client written by CyVerse research software engineers in Google's Go langauge. </p>
+<p>You can install and run <code>gocmd</code> in your computer's terminal to move files from your computer(s) into CyVerse. You can also use <code>gocmd</code> to move files around CyVerse Data Store.</p>
+<ol>
+<li>Install and Configure GoCommands</li>
+</ol>
+<p>Installation instructions vary by operating system (Windows, macOS, Linux). Please follow the complete, up-to-date guide on the CyVerse Learning site.</p>
+<div class="admonition info">
+<p class="admonition-title">GoCommands Installation Guide</p>
+<p>Visit the <a href="https://learning.cyverse.org/ds/gocommands/configuration/" target="_blank">official GoCommands Installation and Configuration Guide</a> and follow the steps for your operating system.</p>
+<p>Optionally, add the <code>gocmd</code> binary to your <code>PATH</code> environmental variable or <code>.bashrc</code></p>
+</div>
+<p>The most important step is running <code>gocmd init</code> to connect the tool to your CyVerse account.</p>
+<p>You will be queried to enter CyVerse specific information for the Data Store. You can leave the <a href="https://learning.cyverse.org/ds/gocommands/configuration/#using-the-init-command" target="_blank">default values for the configuration</a>. </p>
+<table>
+<thead>
+<tr>
+<th>Configuration Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>irods_host</code></td>
+<td><code>data.cyverse.org</code></td>
+</tr>
+<tr>
+<td><code>irods_port</code></td>
+<td><code>1247</code></td>
+</tr>
+<tr>
+<td><code>irods_zone_name</code></td>
+<td><code>iplant</code></td>
+</tr>
+<tr>
+<td><code>irods_user_name</code></td>
+<td><code>&lt;CyVerse Username&gt;</code></td>
+</tr>
+<tr>
+<td><code>irods_user_password</code></td>
+<td><code>&lt;CyVerse Password&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Use these credentials for <code>anonymous</code> access to the Data Store:</p>
+<table>
+<thead>
+<tr>
+<th>Configuration Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>irods_user_name</code></td>
+<td><code>anonymous</code></td>
+</tr>
+<tr>
+<td><code>irods_user_password</code></td>
+<td>(leave empty)</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph LR
+    subgraph "Your Local Machine"
+        direction LR
+        Local_PC[("💻&lt;br&gt;Local Computer")]
+        Local_Files["Local Files&lt;br&gt;(e.g., my_data.csv)"]
+    end
+
+    subgraph "CyVerse Cloud Platform"
+        direction TB
+
+        subgraph "Jupyter Lab (Ephemeral Storage)"
+            direction TB
+            VM["⚙️ Jupyter Lab VM"]
+            VM_FS["VM Filesystem&lt;br&gt;(/home/jovyan, etc.)"]
+            VM_Mount["/data-store&lt;br&gt;(Mount Point)"]
+            VM --&gt; VM_FS
+            VM --&gt; VM_Mount
+        end
+
+        subgraph "CyVerse Data Store (Persistent iRODS Storage)"
+            direction TB
+            iRODS[("☁️&lt;br&gt;iRODS Data Store")]
+            iRODS_Home["/iplant/home/&amp;lt;user&amp;gt;"]
+            iRODS_Shared["/iplant/home/shared"]
+            iRODS --&gt; iRODS_Home
+            iRODS --&gt; iRODS_Shared
+        end
+
+        VM_Mount -- "Mounted via&lt;br&gt;Kubernetes CSI Driver" --&gt; iRODS
+    end
+
+    Local_PC -- "Transfer via&lt;br&gt;gocmd put/get" --&gt; iRODS
+
+    classDef system fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px;
+    classDef storage fill:#eef2ff,stroke:#6366f1;
+    classDef connector stroke-dasharray: 5 5;
+    class Local_PC,VM,iRODS system;
+    class Local_Files,VM_FS,VM_Mount,iRODS_Home,iRODS_Shared storage;</code></pre>
+<ol>
+<li>Transfer Data</li>
+</ol>
+<p>Once installed and configured, you can manage your files from your local terminal. Here are the essential commands:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gocmd ls</code></td>
+<td>list the contents of your home directory in the CyVerse Data Store.</td>
+</tr>
+<tr>
+<td><code>gocmd put &lt;local_file&gt;</code></td>
+<td>put (upload) a file from your computer to your CyVerse home directory.</td>
+</tr>
+<tr>
+<td><code>gocmd get &lt;cyverse_file&gt;</code></td>
+<td>get (download) a file from your CyVerse home directory to your computer.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Let's say you have a file my_data.csv on your computer that you want to analyze in CyVerse.</p>
+<p>On your local computer's terminal</p>
+<p>First, upload the file to CyVerse</p>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>put<span class="w"> </span>my_data.csv
+</code></pre></div>
+<p>You can verify it's there by listing your files</p>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>ls
+</code></pre></div>
+<p>Now the file is in the CyVerse Data Store, ready to be used in an analysis.</p>
+<details class="tip">
+<summary>Other ways to move data to CyVerse</summary>
+<p>There are several ways to access the Data Store. These methods vary in speed, flexibility, and technical knowledge required. Different methods may suit your needs for different projects at different times.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Access Point</th>
+<th>OS</th>
+<th>Upload/Download</th>
+<th>Installation/Setup Required</th>
+<th>Account Required</th>
+<th>Max File Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Discovery Environment</td>
+<td>Web</td>
+<td>Any</td>
+<td>Both</td>
+<td>No</td>
+<td>Yes</td>
+<td>2GB/file upload, no limit for import</td>
+</tr>
+<tr>
+<td>WebDAV</td>
+<td>Web &amp; Command line</td>
+<td>Any</td>
+<td>Both</td>
+<td>No</td>
+<td>Yes (No for public data)</td>
+<td>No limit</td>
+</tr>
+<tr>
+<td>GoCommands</td>
+<td>Command line</td>
+<td>Any</td>
+<td>Both</td>
+<td>Yes</td>
+<td>Yes (No for public data)</td>
+<td>No limit</td>
+</tr>
+<tr>
+<td>iCommands</td>
+<td>Command line</td>
+<td>Linux &amp; macOS</td>
+<td>Both</td>
+<td>Yes</td>
+<td>Yes (No for public data)</td>
+<td>No limit</td>
+</tr>
+<tr>
+<td>SFTP</td>
+<td>Desktop App &amp; Command line</td>
+<td>Any</td>
+<td>Both</td>
+<td>No (Yes for desktop app)</td>
+<td>Yes (No for public data)</td>
+<td>No limit</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="tip">
+<summary>Not Comfortable with the CLI yet?</summary>
+<p>That is totally okay! </p>
+<p>There are many GUI based ways to move data to CyVerse Data Store.</p>
+<ul>
+<li>
+<p><a href="https://de.cyverse.org/data/" target="_blank">Discovery Environment</a></p>
+</li>
+<li>
+<p><a href="https://learning.cyverse.org/ds/sftp/cyberduck" target="_blank">CyberDuck</a></p>
+</li>
+<li>
+<p><a href="https://learning.cyverse.org/ds/sftp/filezilla/" target="_blank">FileZilla</a></p>
+</li>
+</ul>
+</details>
+<h3 id="cyverse-vm-file-system-layout-ubuntu">CyVerse VM File System Layout (Ubuntu)<a class="headerlink" href="#cyverse-vm-file-system-layout-ubuntu" title="Permanent link">&para;</a></h3>
+<p>This diagram illustrates the typical file system structure you'll encounter in a CyVerse virtual machine.</p>
+<pre class="mermaid"><code>graph TD
+    A["/ (root)"]:::dir;
+
+    subgraph "Standard Linux Directories"
+        A --&gt; B["/home"];
+    end
+
+    subgraph "User Home Directory"
+        B --&gt; C["/home/jovyan"];
+    end
+
+    subgraph "CyVerse Data (Mounted via Kubernetes)"
+        A --&gt; D["/data-store (Physical Mount Point)"];
+        D --&gt; D_Home["/data-store/home"];
+        D --&gt; D_Shared["/data-store/shared"];
+        D_Home --&gt; D_User["/data-store/home/&amp;lt;cyverse-username&amp;gt;&lt;br/&gt;(Personal Data)"];
+        D_Shared --&gt; D_Community["Community &amp; Published Data"];
+    end
+
+    subgraph "Symbolic Link for Convenience"
+         C --&gt; E["/home/jovyan/data-store&lt;br/&gt;(Symbolic Link)"];
+    end
+
+    %% --- Links ---
+    E-.-&gt;|links to| D;
+
+    %% --- Styling ---
+    classDef dir fill:#e6f4ff,stroke:#6ba2d1,stroke-width:2px;
+    class A,B,C,D,D_Home,D_Shared,D_User,D_Community,E dir;</code></pre>
+<p>Diagram Key</p>
+<p>Solid Lines (<code>--&gt;</code>): Represent a direct parent-child relationship in the file system (e.g., /home is inside /).</p>
+<p>Dotted Lines (<code>-.-&gt;</code>): Represent a symbolic link. The <code>/home/jovyan/data-store</code> folder is a shortcut that points directly to the <code>/data-store</code> mount point.</p>
+<p><code>/data-store</code>: This is not a normal directory. It's a special mount point managed by Kubernetes, connecting your virtual machine to the main CyVerse Data Store.</p>
+<h2 id="launching-a-virtual-machine-in-the-de">Launching a Virtual Machine in the DE<a class="headerlink" href="#launching-a-virtual-machine-in-the-de" title="Permanent link">&para;</a></h2>
+<p>Now that your data is in the cloud, you can launch a virtual machine to work with it. We recommend starting with a Cloud Shell, or Jupyter Lab, as both provide a user-friendly interface with a built-in terminal.</p>
+<h3 id="log-in-to-the-cyverse-discovery-environment">Log in to the CyVerse Discovery Environment.<a class="headerlink" href="#log-in-to-the-cyverse-discovery-environment" title="Permanent link">&para;</a></h3>
+<p>Click the <a href="https://de.cyverse.org/applications" target="_blank">Apps button</a> to open the Apps window.</p>
+<p>Search for a "Jupyter Lab" and select the latest version.</p>
+<p>On the App page, you can give your analysis a name. For now, the default settings are fine.</p>
+<p>Click Launch Analysis. Your App will take a few moments to start.</p>
+<p>Once the status says "Running," click the hyperlink for your analysis. A new browser tab will open with your Jupyter Lab session.</p>
+<p>The Gateway to Commands: The Terminal
+All actions from this point forward will be performed inside the terminal of your CyVerse virtual machine.</p>
+<p>To Open the Terminal in Jupyter Lab: Click the File menu -&gt; New -&gt; Terminal.</p>
+<p>You will see a window with a prompt, waiting for your commands. This is the Shell.</p>
+<h3 id="file-system-navigation">File System Navigation<a class="headerlink" href="#file-system-navigation" title="Permanent link">&para;</a></h3>
+<p>The commands for navigating the file system in your VM are the same standard Unix commands you would use elsewhere.</p>
+<p>| Command | Explanation |
+| <code>pwd</code> | print working directory (shows you where you are) |
+| <code>ls -F</code> | list the contents of a directory with file-type indicators (/ for dir) |
+| <code>cd &lt;directory&gt;</code> | change directory |
+| <code>mkdir &lt;directory&gt;</code> | make a new directory |
+| <code>mv &lt;source&gt; &lt;destination&gt;</code> | move or rename a file or directory |
+| <code>rm &lt;file&gt;</code> | remove (delete) a file |</p>
+<p>First, you'll need to get the data you uploaded with gocmd from the Data Store into your running VM. For this, we use <code>gocmd get</code>  to move files.</p>
+<h4 id="in-your-cyverse-vm-terminal">In your CyVerse VM Terminal<a class="headerlink" href="#in-your-cyverse-vm-terminal" title="Permanent link">&para;</a></h4>
+<h5 id="download-the-file-from-the-data-store-to-your-vm">Download the file from the Data Store to your VM<a class="headerlink" href="#download-the-file-from-the-data-store-to-your-vm" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span>
+
+gocmd<span class="w"> </span>get<span class="w"> </span>--progress<span class="w"> </span>/iplant/home/shared/geri/geri-neon-workshop
+</code></pre></div>
+<p>The <code>get</code> command tells the <code>gocmd</code> program to "get" or download data. the <code>--progress</code> command tells the program to print out verbose updates as the download runs.</p>
+<p>Now you can see it in your VM's file system</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-F
+</code></pre></div>
+<p>Is the <code>geri-neon-workshop/</code> folder there? What do you see?</p>
+<h3 id="create-a-reproducible-python-environment-with-a-package-manager">Create a reproducible Python environment with a package manager<a class="headerlink" href="#create-a-reproducible-python-environment-with-a-package-manager" title="Permanent link">&para;</a></h3>
+<p>To ensure your analysis is reproducible, you should define the exact software and versions you need. We can do this using a Conda environment managed by <code>mamba</code>, a fast implementation of the <code>conda</code> package manager.</p>
+<p>We will define our environment in a special file called <code>environment.yaml</code></p>
+<ol>
+<li>Create the Environment File
+In your terminal, create the file using the nano text editor:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/geri-neon-workshop/sample-data
+ls<span class="w"> </span>-F
+cat<span class="w"> </span>cowsay.yml
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># environment.yml</span>
+<span class="c1"># This file defines the Conda environment for the CLI art app.</span>
+<span class="c1">#</span>
+<span class="c1"># To create the environment, run:</span>
+<span class="c1"># conda env create -f environment.yml</span>
+<span class="c1"># To activate the environment, run:</span>
+<span class="c1"># conda activate cli_art_env</span>
+<span class="c1">#</span>
+<span class="c1"># IMPORTANT: This app also requires the following command-line tools</span>
+<span class="c1"># which should be installed with your system&#39;s package manager:</span>
+<span class="c1">#</span>
+<span class="c1"># On Debian/Ubuntu (using apt-get):</span>
+<span class="c1">#   sudo apt-get update</span>
+<span class="c1">#   sudo apt-get install cowsay fortune lolcat</span>
+<span class="c1">#</span>
+<span class="c1"># On macOS (using Homebrew):</span>
+<span class="c1">#   brew install cowsay fortune lolcat</span>
+<span class="c1">#</span>
+<span class="c1"># On Fedora/CentOS (using dnf):</span>
+<span class="c1">#   sudo dnf install cowsay fortune-mod lolcat</span>
+
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cowsay</span>
+
+<span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.9</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rich</span>
+</code></pre></div>
+<details class="tip">
+<summary>Conda vs Mamba</summary>
+<p><a href="https://conda.org" target="_blank">Conda</a> is the original, industry-standard, open-source system for managing packages and environments for any language. It is robust and widely trusted.</p>
+<p><a href="https://mamba.readthedocs.io/" target="_blank">Mamba</a> is a re-implementation of the <code>conda</code> package manager in C++. It uses the same commands and configuration but dramatically improves speed by using parallel processing for downloading packages and a much faster dependency solver. For our purposes, it is a drop-in replacement for <code>conda</code> that will make setting up our environments much faster.</p>
+<p>You might also be familiar with <code>pip</code>, Python's standard package manager, which installs packages from the Python Package Index (PyPI). While Conda/Mamba can manage packages for any language and even the Python interpreter itself, <code>pip</code> is exclusively for Python. It's common to use <code>pip</code> to install a package inside a Conda environment if that package isn't available on Conda channels. The general rule is to use Conda/Mamba whenever possible, and then use <code>pip</code> for any remaining Python-specific packages.</p>
+</details>
+<ol>
+<li>Build and Activate the Environment</li>
+</ol>
+<p>Now, use <code>mamba</code> to create the environment from your file.</p>
+<div class="highlight"><pre><span></span><code>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>cowsay.yml
+</code></pre></div>
+<p>Approve the installation</p>
+<p>Mamba will download and install the specified packages. Once it's finished, you can activate your new environment to start using it.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>cowsay
+</code></pre></div>
+<p>Your terminal prompt should now change to show (plotting_env), indicating that you are inside the environment. Any command you run will use the software installed there.</p>
+<p>To exit the environment, simply run:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+</code></pre></div>
+<h4 id="run-the-app">Run the app<a class="headerlink" href="#run-the-app" title="Permanent link">&para;</a></h4>
+<p>After you've activated the new conda environment, run the app.</p>
+<div class="highlight"><pre><span></span><code>python cowsay.py
+</code></pre></div>
+<p>What happens?</p>
+<h4 id="managing-analyses">Managing Analyses<a class="headerlink" href="#managing-analyses" title="Permanent link">&para;</a></h4>
+<p>In the <a href="https://de.cyverse.org/analyses" target="_blank">https://de.cyverse.org/analyses</a> you can view your running or completed analyses.</p>
+<p>Your analysis should have an active timer counting down, if it is still active. You can extend the time by clicking on the ellipses and selecting extend time.</p>
+<p>You can also terminate your app by clicking on the red X. </p>
+<p>Note: apps will time out on their own, but they will burn your valuable allocation hours if left running.</p>
+<p>Practice shutting down your app by clicking on the check box and terminating it.</p>
+<h2 id="jupyter-lab-gpus-w-ollama">Jupyter Lab GPUs w/ Ollama<a class="headerlink" href="#jupyter-lab-gpus-w-ollama" title="Permanent link">&para;</a></h2>
+<p>Start a new App. </p>
+<p>In Apps, <a href="https://de.cyverse.org/apps" target="_blank">https://de.cyverse.org/apps</a> choose a <a href="https://de.cyverse.org/apps/de/e19a5772-94e6-11ec-b1f0-008cfa5ae621/launch">Jupyter Lab Pytorch GPU</a></p>
+<div class="admonition tip">
+<p class="admonition-title">Waiting for apps to start</p>
+<p>When you start an interactive application expect to wait a minute or two. It should not take more than 5 minutes to start an Featured application -- private apps may take longer because their Docker container must be downloaded from an external registry into CyVerse.</p>
+</div>
+<h3 id="run-your-own-ai-model-with-ollama">Run Your Own AI Model with Ollama<a class="headerlink" href="#run-your-own-ai-model-with-ollama" title="Permanent link">&para;</a></h3>
+<p>For advanced tasks, CyVerse offers Apps with Graphics Processing Units (GPUs), which are essential for AI and machine learning. These GPU-enabled Apps come with <a href="https://ollama.org" target="_blank">Ollama</a> pre-installed. Ollama lets you easily run powerful, open-source Large Language Models (LLMs) locally within your private session.</p>
+<ol>
+<li>Download an AI Model
+To use a model, you first need to download it. We'll use <code>gemma:2b</code>, a relatively small but capable model from Google. This command only needs to be run once per VM.</li>
+</ol>
+<h4 id="in-your-cyverse-gpu-vm-terminal">In your CyVerse GPU VM Terminal<a class="headerlink" href="#in-your-cyverse-gpu-vm-terminal" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Open a Terminal in your Jupyter Lab</p>
+<p>Install a small Gemma model from the Ollama registry:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Install Ollama</span>
+pip<span class="w"> </span>install<span class="w"> </span>ollama
+<span class="c1"># Start Ollama Server</span>
+ollama<span class="w"> </span>serve
+</code></pre></div>
+</li>
+<li>
+<p>Run the Model </p>
+<p>Open another terminal window.</p>
+<div class="highlight"><pre><span></span><code>ollama<span class="w"> </span>pull<span class="w"> </span>gemma:2b
+</code></pre></div>
+<p>Now you can run the model and interact with it directly from your command line.</p>
+<div class="highlight"><pre><span></span><code>ollama<span class="w"> </span>run<span class="w"> </span>gemma:2b
+</code></pre></div>
+<p>The prompt will change, and you can now ask the AI questions. Let's try one related to our last topic:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">What</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">purpose</span> <span class="n">of</span> <span class="n">a</span> <span class="n">conda</span> <span class="n">environment</span><span class="err">?</span>
+</code></pre></div>
+<p>The model will generate a detailed explanation right in your terminal. To exit the Ollama session, type <code>/bye</code> and press Enter.</p>
+</li>
+</ol>
+<p>This gives you a powerful, private AI assistant that can help you write code, debug errors, and understand complex topics—all within your secure CyVerse environment. We will explore this in much more detail in the next lesson!</p>
+<h2 id="introductory-shell-commands">Introductory Shell Commands<a class="headerlink" href="#introductory-shell-commands" title="Permanent link">&para;</a></h2>
+<p>The following tutorial material was taken from the <a href="https://swcarpentry.github.io/shell-novice/">Carpentries Shell Module</a>. </p>
+<div class="admonition info">
+<p class="admonition-title">Download Some Data from the Carpentries</p>
+<p>To follow along with the tutorial, please download and unzip this data. <a href="https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip">shell-lesson-data.zip</a> </p>
+<details class="tip">
+<summary>The Command Line Way to Download and Unzip!</summary>
+<p>Execute the following commands:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>unzip
+$<span class="w"> </span>wget<span class="w"> </span>https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+$<span class="w"> </span>unzip<span class="w"> </span>shell-lesson-data.zip
+</code></pre></div>
+</details>
+</div>
+<p><br>
+<br>
+<br></p>
+<h3 id="more-carpentries-lessons-on-linux-command-line">More Carpentries Lessons on Linux Command line<a class="headerlink" href="#more-carpentries-lessons-on-linux-command-line" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://swcarpentry.github.io/shell-novice/04-pipefilter.html">Pipes and Filters</a></li>
+<li><a href="https://swcarpentry.github.io/shell-novice/05-loop.html">Loops</a></li>
+<li><a href="https://swcarpentry.github.io/shell-novice/06-script.html">Scripts</a></li>
+<li><a href="https://swcarpentry.github.io/shell-novice/07-find.html">Finding Things</a></li>
+</ul>
+<p><br>
+<br>
+<br></p>
+<hr />
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2025-07-19
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 The University of Arizona
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ncems/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
