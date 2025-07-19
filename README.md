@@ -1,4 +1,7 @@
 # geri-neon-ecs
+
+[![Publish docs via GitHub](https://github.com/tyson-swetnam/geri-neon-ecs/actions/workflows/ghpages.yml/badge.svg)](https://github.com/tyson-swetnam/geri-neon-ecs/actions/workflows/ghpages.yml)
+
 July 23rd, 2025 GERI-NEON Early Career Scholars Workshop
 
 Documentation based upon CyVerse Learning's Foundations of Open Science Skills (FOSS) course. 
