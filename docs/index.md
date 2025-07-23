@@ -16,6 +16,7 @@ By working through an example project relevant to your interests, you will pract
 
 ---
 
+[July 23, 2025 Slides](https://docs.google.com/presentation/d/1CJVplbX45ovg_0LwHQTcBNdb_INxl_Z6m3xRxKhUxuE/edit?usp=sharing)
 
 **Funding and Citations:**
 
